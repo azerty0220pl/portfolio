@@ -1,0 +1,8 @@
+@import "../node_modules/bootstrap/scss/functions";
+
+$primary: tint-color(#20c997, 40%);
+$secondary: tint-color(#20c997, 60%);
+$light: tint-color(#20c997, 80%);
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "bootstrap";
