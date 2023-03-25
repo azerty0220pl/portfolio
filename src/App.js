@@ -24,10 +24,24 @@ function App() {
             <h1 className="text-center">Szymon Kokot</h1>
             <p className="text-center">Fullstack web developer and mobile game developer.</p>
             <div className="d-flex justify-content-evenly">
-              <a href="https://www.freecodecamp.org/SzymonKokot"><FontAwesomeIcon className="text-dark" icon={ faFreeCodeCamp } /></a>
-              <a href="https://github.com/azerty0220pl"><FontAwesomeIcon className="text-dark" icon={ faGithub } /></a>
-              <a href="https://www.linkedin.com/in/szymon-kokot-b3143b26a/"><FontAwesomeIcon className="text-dark" icon={ faLinkedin } /></a>
+              <a href="https://www.freecodecamp.org/SzymonKokot" target="_blank"><FontAwesomeIcon className="text-dark" icon={ faFreeCodeCamp } /></a>
+              <a href="https://github.com/azerty0220pl" target="_blank"><FontAwesomeIcon className="text-dark" icon={ faGithub } /></a>
+              <a href="https://www.linkedin.com/in/szymon-kokot-b3143b26a/" target="_blank"><FontAwesomeIcon className="text-dark" icon={ faLinkedin } /></a>
             </div>
+          </div>
+        </section>
+        <section id="about" className="bg-light p-4">
+          <h1 className="text-center m-3">About me</h1>
+          <div className="d-flex justify-content-center">
+            <p className="text-center m-3 w-75">
+              My name is Szymon and I am 20 years old. I am from Poland but I live in Spain. 
+              Programming was my passion for quite some time. I started learning with Arduino and 
+              Unity with C# all by myself. In the meantime I started a degree in computer science 
+              at the Polytechnic University of Madrid. After two years I changed to the University of 
+              Murcia were I abandoned my studies as I was not happy with them. It was then when I 
+              decided to learn fullstack web development by
+              earning <a className="text-dark" href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp.org</a> certifications.
+            </p>
           </div>
         </section>
       </main>
