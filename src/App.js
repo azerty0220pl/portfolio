@@ -44,6 +44,14 @@ function App() {
             </p>
           </div>
         </section>
+        <section id="certifications" className="bg-light p-1">
+          <h1 className='text-center m-3'>Certifications</h1>
+          <p className='text-center'>Certifications I earnd from <a className="text-dark" href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp.org</a></p>
+          <h2 className='text-center m-5'><a className="text-dark" href="https://www.freecodecamp.org/certification/SzymonKokot/responsive-web-design" target="_blank">Responsive Web Design Certification</a></h2>
+          <h2 className='text-center m-5'><a className="text-dark" href="https://www.freecodecamp.org/certification/SzymonKokot/javascript-algorithms-and-data-structures" target="_blank">JavaScript Algorithms and Data Structures Certification</a></h2>
+          <h2 className='text-center m-5'><a className="text-dark" href="https://www.freecodecamp.org/certification/SzymonKokot/front-end-development-libraries" target="_blank">Front End Development libraries Certifications</a></h2>
+          <h2 className='text-center m-5'><a className="text-dark" href="https://www.freecodecamp.org/certification/SzymonKokot/back-end-development-and-apis" target="_blank">Back End Development and APIs Certification</a></h2>
+        </section>
       </main>
     </div>
   );
