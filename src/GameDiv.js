@@ -7,9 +7,11 @@ class GameDiv extends React.Component {
     render () {
         return (
             <div className='row m-5'>
-              <img className="rounded col-sm-4 img-fluid" src={this.props.icon} alt='' />
+              <div className="col-sm-4 d-flex align-items-center">
+                <img className='rounded img-fluid' src={this.props.icon} alt='' />
+              </div>
               <div className='col-sm-8 d-flex flex-column justify-content-center align-items-center'>
-                <h3 className='text-center'>{this.props.gameName}</h3>
+                <h3 className='text-center mt-3'>{this.props.gameName}</h3>
                 <p className='text-center'>{this.props.des}</p>
                 <div className='w-50 d-flex justify-content-evenly'>
                   <Link link={this.props.git}><FontAwesomeIcon className="text-dark" icon={ faGithub } /></Link>
