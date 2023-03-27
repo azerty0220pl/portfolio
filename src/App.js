@@ -11,16 +11,21 @@ function App() {
   return (
     <div className="fluid-container">
       <header>
-        <nav className="navbar navbar-expand-lg justify-content-between fixed-top" style={{"backgroundColor": "#20c997"}}>
+        <nav className="navbar navbar-expand-sm justify-content-between fixed-top" style={{"backgroundColor": "#20c997"}}>
           <a href="#home" className="navbar-brand">
             <img className="img-fluid mx-2" style={{ 'height': '2rem' }} src={logo} alt=""/>
             Szymon Kokot
           </a>
-          <ul className="navbar-nav mx-2">
-            <li className="nav-item"><a className="nav-link" href="#about">About me</a></li>
-            <li className="nav-item"><a className="nav-link" href="#certifications">Certifications</a></li>
-            <li className="nav-item"><a className="nav-link" href="#games">Games</a></li>
-          </ul>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse justify-content-end" id="collapse">
+            <ul className="navbar-nav mx-2">
+              <li className="nav-item"><a className="nav-link" href="#about">About me</a></li>
+              <li className="nav-item"><a className="nav-link" href="#certifications">Certifications</a></li>
+              <li className="nav-item"><a className="nav-link" href="#games">Games</a></li>
+            </ul>
+          </div>
         </nav>
       </header>
       <main>
@@ -52,7 +57,7 @@ function App() {
         </section>
         <section id="certifications" className="bg-secondary p-5">
           <h1 className='text-center m-3'>Certifications</h1>
-          <p className='text-center'>Certifications I earnd from <a className="text-dark" href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp.org</a></p>
+          <p className='text-center'>Certifications I earnd from <a className="text-dark" href="https://www.freecodecamp.org/" target="_blank" rel="noreferrer">freeCodeCamp.org</a></p>
           <h3 className='text-center m-5'><a className="text-dark" href="https://www.freecodecamp.org/certification/SzymonKokot/responsive-web-design" target="_blank" rel="noreferrer">Responsive Web Design Certification</a></h3>
           <h3 className='text-center m-5'><a className="text-dark" href="https://www.freecodecamp.org/certification/SzymonKokot/javascript-algorithms-and-data-structures" target="_blank" rel="noreferrer">JavaScript Algorithms and Data Structures Certification</a></h3>
           <h3 className='text-center m-5'><a className="text-dark" href="https://www.freecodecamp.org/certification/SzymonKokot/front-end-development-libraries" target="_blank" rel="noreferrer">Front End Development libraries Certifications</a></h3>

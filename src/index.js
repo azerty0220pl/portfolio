@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './app.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'jquery/dist/jquery.min.js'
+import 'bootstrap/dist/js/bootstrap.min.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
