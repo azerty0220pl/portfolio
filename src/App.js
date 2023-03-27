@@ -1,5 +1,6 @@
 import Navbar from './Navbar.js';
 import Link from './Link.js'
+import GameDiv from './GameDiv.js';
 import srIcon from './squareRun.png';
 import nriiIcon from './neonRideII.png';
 import nrIcon from './neonRide.png';
@@ -55,61 +56,36 @@ function App() {
             Mobile games I made with Unity3D, c#, blender and inkscape. All of them are published 
             on Play Store.
           </p>
-          <div className='row my-4'>
-            <img className="rounded col-sm-4" src={srIcon} alt='Square Run Icon' />
-            <div className='col-sm-8 d-flex flex-column justify-content-center align-items-center'>
-              <h3 className='text-center'>Square Run</h3>
-              <p className='text-center'>Avoid obstacles, climb, find the entrance, climb, avoid obstacles, climb, climb, climb...</p>
-              <div className='w-50 d-flex justify-content-evenly'>
-                <Link link="https://github.com/azerty0220pl/VerticalFlappyCube"><FontAwesomeIcon icon={ faGithub } /></Link>
-                <Link link="https://play.google.com/store/apps/details?id=com.azerty0220pl.climbingsquare"><FontAwesomeIcon className="text-dark" icon={ faGooglePlay } /></Link>
-              </div>
-            </div>
-        </div>
-        <div className='row my-4'>
-          <img className="rounded col-sm-4" src={nriiIcon} alt='Neon Ride II Icon' />
-          <div className='col-sm-8 d-flex flex-column justify-content-center align-items-center'>
-            <h3 className='text-center'>Neon Ride II</h3>
-            <p className='text-center'>Second part of Neon Ride, will you be able to go even further?</p>
-            <div className='w-50 d-flex justify-content-evenly'>
-              <Link link="https://github.com/azerty0220pl/Neon_Ride_II"><FontAwesomeIcon className="text-dark" icon={ faGithub } /></Link>
-              <Link link="https://play.google.com/store/apps/details?id=com.azerty0220pl.neonrideii"><FontAwesomeIcon className="text-dark" icon={ faGooglePlay } /></Link>
-            </div>
-          </div>
-        </div>
-        <div className='row my-4'>
-          <img className="rounded col-sm-4" src={nrIcon} alt='Neon Ride Icon' />
-          <div className='col-sm-8 d-flex flex-column justify-content-center align-items-center'>
-            <h3 className='text-center'>Neon Ride</h3>
-            <p className='text-center'>Go as fast and as far as you can. Will you be able to avoid all obstacles in your way?</p>
-            <div className='w-50 d-flex justify-content-evenly'>
-              <Link link="https://github.com/azerty0220pl/Neon_Ride"><FontAwesomeIcon className="text-dark" icon={ faGithub } /></Link>
-              <Link link="https://play.google.com/store/apps/details?id=com.Azerty0220pl.NeonRide"><FontAwesomeIcon className="text-dark" icon={ faGooglePlay } /></Link>
-            </div>
-          </div>
-        </div>
-        <div className='row my-4'>
-          <img className="rounded col-sm-4" src={fcIcon} alt='Flappy Cube 2D Icon' />
-          <div className='col-sm-8 d-flex flex-column justify-content-center align-items-center'>
-            <h3 className='text-center'>Flappy Cube 2D</h3>
-            <p className='text-center'>Try to get as high as you can without touching the black walls on both sides! Tap the screen and try to get to the end of the journey.</p>
-            <div className='w-50 d-flex justify-content-evenly'>
-              <Link link="https://github.com/azerty0220pl/Flappy-Cube"><FontAwesomeIcon className="text-dark" icon={ faGithub } /></Link>
-              <Link link="https://play.google.com/store/apps/details?id=com.Azerty0220pl.FlappyCube"><FontAwesomeIcon className="text-dark" icon={ faGooglePlay } /></Link>
-            </div>
-          </div>
-        </div>
-        <div className='row my-4'>
-          <img className="rounded col-sm-4" src={ccIcon} alt='Cube Climb Icon' />
-          <div className='col-sm-8 d-flex flex-column justify-content-center align-items-center'>
-            <h3 className='text-center'>Cube Climb</h3>
-            <p className='text-center'>Avoid obstacles, choose your favourite skin and enjoy this endless runner. Get as high as you can, are you ready for the challenge?</p>
-            <div className='w-50 d-flex justify-content-evenly'>
-              <Link link="https://github.com/azerty0220pl/Cube-Run"><FontAwesomeIcon className="text-dark" icon={ faGithub } /></Link>
-              <Link link="https://play.google.com/store/apps/details?id=com.azerty0220pl.CubeRun"><FontAwesomeIcon className="text-dark" icon={ faGooglePlay } /></Link>
-            </div>
-          </div>
-        </div>
+          <GameDiv
+            icon={srIcon}
+            gameName='Square Run'
+            des='Avoid obstacles, climb, find the entrance, climb, avoid obstacles, climb, climb, climb...'
+            git="https://github.com/azerty0220pl/VerticalFlappyCube"
+            play="https://play.google.com/store/apps/details?id=com.azerty0220pl.climbingsquare" />
+          <GameDiv
+            icon={nriiIcon}
+            gameName='Neon Ride II'
+            des='Second part of Neon Ride, will you be able to go even further?'
+            git="https://github.com/azerty0220pl/Neon_Ride_II"
+            play="https://play.google.com/store/apps/details?id=com.azerty0220pl.neonrideii" />
+          <GameDiv
+            icon={nrIcon}
+            gameName='Neon Ride'
+            des='Go as fast and as far as you can. Will you be able to avoid all obstacles in your way?'
+            git="https://github.com/azerty0220pl/Neon_Ride"
+            play="https://play.google.com/store/apps/details?id=com.Azerty0220pl.NeonRide" />
+          <GameDiv
+            icon={fcIcon}
+            gameName='Flappy Cube 2D'
+            des='Try to get as high as you can without touching the black walls on both sides! Tap the screen and try to get to the end of the journey.'
+            git="https://github.com/azerty0220pl/Flappy-Cube"
+            play="https://play.google.com/store/apps/details?id=com.Azerty0220pl.FlappyCube" />
+          <GameDiv
+            icon={ccIcon}
+            gameName='Cube Climb'
+            des='Avoid obstacles, choose your favourite skin and enjoy this endless runner. Get as high as you can, are you ready for the challenge?'
+            git="https://github.com/azerty0220pl/Cube-Run"
+            play="https://play.google.com/store/apps/details?id=com.azerty0220pl.CubeRun" />
         </section>
       </main>
     </div>
