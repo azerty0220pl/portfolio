@@ -60,13 +60,13 @@ class App extends React.Component {
                 <li className="nav-item"><a className="nav-link" href="#certifications">{this.state.lang.certifications}</a></li>
                 <li className="nav-item"><a className="nav-link" href="#games">{this.state.lang.games}</a></li>
                 <li className="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a className="nav-link dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                     {this.state.lang.lang }
                   </a>
                   <ul class="dropdown-menu " style={{"backgroundColor": "#20c997"}} aria-labelledby="dropdownMenuLink">
-                    <li><button class="dropdown-item" value="pl" onClick={this.changeLanguage}>Polski</button></li>
-                    <li><button class="dropdown-item" value="en" onClick={this.changeLanguage}>English</button></li>
-                    <li><button class="dropdown-item" value="es" onClick={this.changeLanguage}>Español</button></li>
+                    <li><button className="dropdown-item" value="pl" onClick={this.changeLanguage}>Polski</button></li>
+                    <li><button className="dropdown-item" value="en" onClick={this.changeLanguage}>English</button></li>
+                    <li><button className="dropdown-item" value="es" onClick={this.changeLanguage}>Español</button></li>
                   </ul>
                 </li>
               </ul>
