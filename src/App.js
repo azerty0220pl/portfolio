@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="fluid-container">
       <header>
-        <nav className="navbar navbar-expand-lg justify-content-between fixed-top" style={{"background-color": "#20c997"}}>
+        <nav className="navbar navbar-expand-lg justify-content-between fixed-top" style={{"backgroundColor": "#20c997"}}>
           <a href="#home" className="navbar-brand">
             <img className="img-fluid mx-2" style={{ 'height': '2rem' }} src={logo} alt=""/>
             Szymon Kokot
@@ -64,9 +64,9 @@ function App() {
             Mobile games I made with Unity3D, c#, blender and inkscape. All of them are published 
             on Play Store.
           </p>
-          <div className='d-flex justify-content-evenly m-4'>
-            <img className="rounded" src={srIcon} alt='Square Run Icon' />
-            <div className='w-75 d-flex flex-column justify-content-center align-items-center'>
+          <div className='row m-4'>
+            <img className="rounded col-md-4" src={srIcon} alt='Square Run Icon' />
+            <div className='col-md-8 d-flex flex-column justify-content-center align-items-center'>
               <h3 className='text-center'>Square Run</h3>
               <p className='text-center'>Avoid obstacles, climb, find the entrance, climb, avoid obstacles, climb, climb, climb...</p>
               <div className='w-50 d-flex justify-content-evenly'>
@@ -75,9 +75,9 @@ function App() {
               </div>
             </div>
         </div>
-        <div className='d-flex justify-content-evenly m-4'>
-          <img className="rounded" src={nriiIcon} alt='Neon Ride II Icon' />
-          <div className='w-75 d-flex flex-column justify-content-center align-items-center'>
+        <div className='row m-4'>
+          <img className="rounded col-md-4" src={nriiIcon} alt='Neon Ride II Icon' />
+          <div className='col-md-8 d-flex flex-column justify-content-center align-items-center'>
             <h3 className='text-center'>Neon Ride II</h3>
             <p className='text-center'>Second part of Neon Ride, will you be able to go even further?</p>
             <div className='w-50 d-flex justify-content-evenly'>
@@ -86,9 +86,9 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='d-flex justify-content-evenly m-4'>
-          <img className="rounded" src={nrIcon} alt='Neon Ride Icon' />
-          <div className='w-75 d-flex flex-column justify-content-center align-items-center'>
+        <div className='row m-4'>
+          <img className="rounded col-md-4" src={nrIcon} alt='Neon Ride Icon' />
+          <div className='col-md-8 d-flex flex-column justify-content-center align-items-center'>
             <h3 className='text-center'>Neon Ride</h3>
             <p className='text-center'>Go as fast and as far as you can. Will you be able to avoid all obstacles in your way?</p>
             <div className='w-50 d-flex justify-content-evenly'>
@@ -97,9 +97,9 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='d-flex justify-content-evenly m-4'>
-          <img className="rounded" src={fcIcon} alt='Flappy Cube 2D Icon' />
-          <div className='w-75 d-flex flex-column justify-content-center align-items-center'>
+        <div className='row m-4'>
+          <img className="rounded col-md-4" src={fcIcon} alt='Flappy Cube 2D Icon' />
+          <div className='col-md-8 d-flex flex-column justify-content-center align-items-center'>
             <h3 className='text-center'>Flappy Cube 2D</h3>
             <p className='text-center'>Try to get as high as you can without touching the black walls on both sides! Tap the screen and try to get to the end of the journey.</p>
             <div className='w-50 d-flex justify-content-evenly'>
@@ -108,9 +108,9 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='d-flex justify-content-evenly m-4'>
-          <img className="rounded" src={ccIcon} alt='Cube Climb Icon' />
-          <div className='w-75 d-flex flex-column justify-content-center align-items-center'>
+        <div className='row m-4'>
+          <img className="rounded col-md-4" src={ccIcon} alt='Cube Climb Icon' />
+          <div className='col-md-8 d-flex flex-column justify-content-center align-items-center'>
             <h3 className='text-center'>Cube Climb</h3>
             <p className='text-center'>Avoid obstacles, choose your favourite skin and enjoy this endless runner. Get as high as you can, are you ready for the challenge?</p>
             <div className='w-50 d-flex justify-content-evenly'>
