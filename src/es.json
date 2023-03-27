@@ -1,0 +1,21 @@
+{
+    "name": "Szymon Kokot",
+    "shortDes": "Fullstack web developer y desarrollador de juegos para movil.",
+    "longDes": "Me llamo Szymon, tengo 20 años. Soy polaco, aunque vivo ya mucho tiempo en España. La programación es mi pasión desde hace años. Empecé aprendiendo por mi cuenta a programar Arduino y después pasé a desarrollar videojuegos con Unity3D. He empezado ha estudiar ingenieria informática en la UPM, pero después de dos años decidí volver a Murcia. Tras un año más de la carrera, la dejé principalmente porque no me satisfacía. Fue entonces cuanto me interesé por es desarrollo de páginas web y empecé a conseguir certificados de freeCodeCamp.",
+    "aboutMe": "Sobre mí",
+    "certifications": "Certificados",
+    "games": "Juegos",
+    "lang": "Idiomas",
+    "certParagraph": "Certificados de freeCodeCamp que he conseguido.",
+    "gamesParagraph": "Juegos para móvil que he desarrollado con Unity3D, c#, blender e inkscape. Todos ellos publicados en Play Store.",
+    "squareRun": "Square Run",
+    "srDes": "Avoid obstacles, climb, find the entrance, climb, avoid obstacles, climb, climb, climb...",
+    "neonRideII": "Neon Ride II",
+    "nriiDes": "Second part of Neon Ride, will you be able to go even further?",
+    "neonRide": "Neon Ride",
+    "nrDes": "Go as fast and as far as you can. Will you be able to avoid all obstacles in your way?",
+    "flappyCube": "Flappy Cube 2D",
+    "fcDes": "Try to get as high as you can without touching the black walls on both sides! Tap the screen and try to get to the end of the journey.",
+    "cubeClimb": "Cube Climb",
+    "ccDes": "Avoid obstacles, choose your favourite skin and enjoy this endless runner. Get as high as you can, are you ready for the challenge?"
+}

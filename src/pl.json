@@ -1,0 +1,21 @@
+{
+    "name": "Szymon Kokot",
+    "shortDes": "Fullstack web developer i twórca gier mobilnych",
+    "longDes": "Nazywam się Szymon i mam 20 lat. Jestem polakiem, choć od kilkunastu lat mieszkam w Hiszpanii. Programowanie jest moją pasją od wielu lat. Zacząłem uczyć się programowania sam, od Arduino. Później zacząłem tworzyć gry za pomocą silnika Unity3D. Zacząłem stuiować inżynierię informatyczną na politechnice madryckiej, jednak po dwóch latach zdecydowałem się na powrót do rodzimego domu w Murcji. Po jescze jednym roku studiów, rzuciłem je ponieważ nie sprawiały mi radości. Wtedy to właśnie zacząłem interesować się projektowaniem stron internetowych i zacząłem zdobywać certyfikaty freeCodeCamp.",
+    "aboutMe": "O mnie",
+    "certifications": "Certyfikaty",
+    "games": "Gry",
+    "lang": "Języki",
+    "certParagraph": "Moje certyfikaty z freeCodeCamp.",
+    "gamesParagraph": "Moje gry mobilne, stworzone za pomocą Unity3D, c#, blender'a i inkscape'a. Wszystkie opublikowałem na Play Store.",
+    "squareRun": "Square Run",
+    "srDes": "Avoid obstacles, climb, find the entrance, climb, avoid obstacles, climb, climb, climb...",
+    "neonRideII": "Neon Ride II",
+    "nriiDes": "Second part of Neon Ride, will you be able to go even further?",
+    "neonRide": "Neon Ride",
+    "nrDes": "Go as fast and as far as you can. Will you be able to avoid all obstacles in your way?",
+    "flappyCube": "Flappy Cube 2D",
+    "fcDes": "Try to get as high as you can without touching the black walls on both sides! Tap the screen and try to get to the end of the journey.",
+    "cubeClimb": "Cube Climb",
+    "ccDes": "Avoid obstacles, choose your favourite skin and enjoy this endless runner. Get as high as you can, are you ready for the challenge?"
+}
