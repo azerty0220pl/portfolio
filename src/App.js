@@ -60,6 +60,7 @@ class App extends React.Component {
                 <li className="nav-item"><a className="nav-link" href="#about">{this.state.lang.aboutMe}</a></li>
                 <li className="nav-item"><a className="nav-link" href="#certifications">{this.state.lang.certifications}</a></li>
                 <li className="nav-item"><a className="nav-link" href="#games">{this.state.lang.games}</a></li>
+                <li className="nav-item"><a className="nav-link" href="#chatapp">chatApp</a></li>
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                     {this.state.lang.lang }
@@ -138,7 +139,7 @@ class App extends React.Component {
           <section id="games" className='bg-primary p-5'>
             <h1 className='text-center m-3'>{this.state.lang.games}</h1>
             <p className="text-center">
-            {this.state.lang.gamesParagraph}
+              {this.state.lang.gamesParagraph}
             </p>
             <GameDiv
               icon={srIcon}
@@ -170,6 +171,13 @@ class App extends React.Component {
               des='Avoid obstacles, choose your favourite skin and enjoy this endless runner. Get as high as you can, are you ready for the challenge?'
               git="https://github.com/azerty0220pl/Cube-Run"
               play="https://play.google.com/store/apps/details?id=com.azerty0220pl.CubeRun" />
+          </section>
+          <section id="chatapp" className='bg-secondary p-5'>
+            <h1 className='text-center m-3'>chatApp</h1>
+            <p className="text-center"><Link link="https://github.com/azerty0220pl/chatApp"><FontAwesomeIcon icon={ faGithub } /></Link></p>
+            <p className="text-center">{this.state.lang.chatAppParagraph1}</p>
+            <p className="text-center"><Link link="https://azerty0220pl.github.io/chatApp/">chatApp</Link></p>
+            <p className="text-center">{this.state.lang.chatAppParagraph2}</p>
           </section>
         </main>
       </div>

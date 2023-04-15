@@ -17,5 +17,7 @@
     "flappyCube": "Flappy Cube 2D",
     "fcDes": "Try to get as high as you can without touching the black walls on both sides! Tap the screen and try to get to the end of the journey.",
     "cubeClimb": "Cube Climb",
-    "ccDes": "Avoid obstacles, choose your favourite skin and enjoy this endless runner. Get as high as you can, are you ready for the challenge?"
+    "ccDes": "Avoid obstacles, choose your favourite skin and enjoy this endless runner. Get as high as you can, are you ready for the challenge?",
+    "chatAppParagraph1": "He desarrollado el cliente de chatApp con react, redux y bootstrap. Está disponible en Github Pages. Enlace:",
+    "chatAppParagraph2": "He desarrollado el API de chatApp con node, express, passport y socket.io. Está disponible en render. Por favor, tenga en cuenta que el servidor hace lo que puede, lo que no siempre es suficiente."
 }
