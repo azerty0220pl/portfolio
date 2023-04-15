@@ -5,7 +5,7 @@ class CertificationDiv extends React.Component {
     render () {
         return (
             <div className=''>
-                <h3 className='text-center mt-5'><Link link={this.props.certificationLink}>{this.props.certificationTitle}</Link></h3>
+                <h3 className='text-center my-4'><Link link={this.props.certificationLink}>{this.props.certificationTitle}</Link></h3>
                 <p className='text-center'><Link link={this.props.project1Link} className='text-center'>{this.props.project1Title}</Link></p>
                 <p className='text-center'><Link link={this.props.project2Link} className='text-center'>{this.props.project2Title}</Link></p>
                 <p className='text-center'><Link link={this.props.project3Link} className='text-center'>{this.props.project3Title}</Link></p>
