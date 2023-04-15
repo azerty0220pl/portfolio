@@ -2,6 +2,7 @@ import React from 'react';
 
 import Link from './Link.js'
 import GameDiv from './GameDiv.js';
+import CertificationDiv from './CertificationDiv.js';
 
 import en from './en.json';
 import pl from './pl.json';
@@ -63,7 +64,7 @@ class App extends React.Component {
                   <a className="nav-link dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                     {this.state.lang.lang }
                   </a>
-                  <ul class="dropdown-menu " style={{"backgroundColor": "#20c997"}} aria-labelledby="dropdownMenuLink">
+                  <ul className="dropdown-menu " style={{"backgroundColor": "#20c997"}} aria-labelledby="dropdownMenuLink">
                     <li><button className="dropdown-item" value="pl" onClick={this.changeLanguage}>Polski</button></li>
                     <li><button className="dropdown-item" value="en" onClick={this.changeLanguage}>English</button></li>
                     <li><button className="dropdown-item" value="es" onClick={this.changeLanguage}>Español</button></li>
@@ -97,10 +98,42 @@ class App extends React.Component {
           <section id="certifications" className="bg-secondary p-5">
             <h1 className='text-center m-3'>{this.state.lang.certifications}</h1>
             <p className='text-center'>{this.state.lang.certParagraph}</p>
-            <h3 className='text-center m-5'><Link link="https://www.freecodecamp.org/certification/SzymonKokot/responsive-web-design">Responsive Web Design Certification</Link></h3>
-            <h3 className='text-center m-5'><Link link="https://www.freecodecamp.org/certification/SzymonKokot/javascript-algorithms-and-data-structures">JavaScript Algorithms and Data Structures Certification</Link></h3>
-            <h3 className='text-center m-5'><Link link="https://www.freecodecamp.org/certification/SzymonKokot/front-end-development-libraries">Front End Development libraries Certifications</Link></h3>
-            <h3 className='text-center m-5'><Link link="https://www.freecodecamp.org/certification/SzymonKokot/back-end-development-and-apis">Back End Development and APIs Certification</Link></h3>
+            <CertificationDiv
+              certificationLink="https://www.freecodecamp.org/certification/SzymonKokot/responsive-web-design"
+              certificationTitle="Responsive Web Design Certification"
+            />
+            <CertificationDiv
+              certificationLink="https://www.freecodecamp.org/certification/SzymonKokot/javascript-algorithms-and-data-structures"
+              certificationTitle="JavaScript Algorithms and Data Structures Certification"
+            />
+            <CertificationDiv
+              certificationLink="https://www.freecodecamp.org/certification/SzymonKokot/front-end-development-libraries"
+              certificationTitle="Front End Development libraries Certifications"
+              project1Link="https://codepen.io/azerty0220pl/pen/vYzpzoX"
+              project1Title="Random Quote Machine"
+              project2Link="https://codepen.io/azerty0220pl/pen/GRXyzVG"
+              project2Title="Markdown Previewer"
+              project3Link="https://codepen.io/azerty0220pl/full/ZEMrNPd"
+              project3Title="Drum Machine"
+              project4Link="https://codepen.io/azerty0220pl/full/vYzRZjj"
+              project4Title="JavaScript Calculator"
+              project5Link="https://codepen.io/azerty0220pl/pen/WNgzMmK"
+              project5Title="25 + 5 Clock"
+            />
+            <CertificationDiv
+              certificationLink="https://www.freecodecamp.org/certification/SzymonKokot/back-end-development-and-apis"
+              certificationTitle="Back End Development and APIs Certification"
+              project1Link="https://timestamp-microservice-szymonkokot.onrender.com/"
+              project1Title="Timestamp Microservice"
+              project2Link="https://request-header-parser-microservice-bjyg.onrender.com/"
+              project2Title="Request Header Parser Microservice"
+              project3Link="https://url-shortener-microservice-szymonkokot.onrender.com/"
+              project3Title="URL Shortener Microservice"
+              project4Link="https://exercise-tracker-szymonkokot.onrender.com/"
+              project4Title="Exercise Tracker"
+              project5Link="https://file-metadata-microservice-szymonkokot.onrender.com/"
+              project5Title="File Metadata Microservice"
+            />
           </section>
           <section id="games" className='bg-primary p-5'>
             <h1 className='text-center m-3'>{this.state.lang.games}</h1>
