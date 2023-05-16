@@ -1,24 +1,26 @@
 import React from 'react';
 
-import Link from './Link.js'
-import GameDiv from './GameDiv.js';
-import CertificationDiv from './CertificationDiv.js';
+import './app.scss';
 
-import en from './en.json';
-import pl from './pl.json';
-import es from './es.json';
+import Link from './Components/Link.js'
+import GameDiv from './Components/GameDiv.js';
+import CertificationDiv from './Components/CertificationDiv.js';
 
-import logo from './Azerty0220.png';
-import srIcon from './squareRun.png';
-import nriiIcon from './neonRideII.png';
-import nrIcon from './neonRide.png';
-import fcIcon from './flappyCube.png';
-import ccIcon from './cubeClimb.png';
+import en from './Languages/en.json';
+import pl from './Languages/pl.json';
+import es from './Languages/es.json';
+
+import logo from './Icons/Azerty0220.png';
+import srIcon from './Icons/squareRun.png';
+import nriiIcon from './Icons/neonRideII.png';
+import nrIcon from './Icons/neonRide.png';
+import fcIcon from './Icons/flappyCube.png';
+import ccIcon from './Icons/cubeClimb.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faFreeCodeCamp, faLinkedin, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
 
-class App extends React.Component {
+class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -185,4 +187,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Main;
