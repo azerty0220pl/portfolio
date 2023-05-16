@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Main from './Main/Main';
+import Secondary from './Secondary/Secondary';
 
 import {
   createBrowserRouter,
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Main />
+  },
+  {
+    path: "/projects",
+    element: <Secondary />
   }
 ]);
 
