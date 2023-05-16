@@ -17,6 +17,7 @@ import ccIcon from './Icons/cubeClimb.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faFreeCodeCamp, faLinkedin, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
+import { faGamepad } from '@fortawesome/free-solid-svg-icons';
 
 class Main extends React.Component {
   constructor(props) {
@@ -60,7 +61,7 @@ class Main extends React.Component {
                 <li className="nav-item"><a className="nav-link" href="#about">{this.state.lang.aboutMe}</a></li>
                 <li className="nav-item"><a className="nav-link" href="#certifications">{this.state.lang.certifications}</a></li>
                 <li className="nav-item"><a className="nav-link" href="#games">{this.state.lang.games}</a></li>
-                <li className="nav-item"><a className="nav-link" href="#chatapp">chatApp</a></li>
+                <li className="nav-item"><a className="nav-link" href="#projects">{this.state.lang.projects}</a></li>
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                     {this.state.lang.lang }
@@ -172,12 +173,10 @@ class Main extends React.Component {
               git="https://github.com/azerty0220pl/Cube-Run"
               play="https://play.google.com/store/apps/details?id=com.azerty0220pl.CubeRun" />
           </section>
-          <section id="chatapp" className='bg-secondary p-5'>
-            <h1 className='text-center m-3'>chatApp</h1>
-            <p className="text-center"><Link link="https://github.com/azerty0220pl/chatApp"><FontAwesomeIcon icon={ faGithub } /></Link></p>
-            <p className="text-center">{this.state.lang.chatAppParagraph1}</p>
-            <p className="text-center"><Link link="https://azerty0220pl.github.io/chatApp/">chatApp</Link></p>
-            <p className="text-center">{this.state.lang.chatAppParagraph2}</p>
+          <section id="projects" className='bg-secondary p-5'>
+            <h1 className='text-center m-3'>{this.state.lang.projects}</h1>
+            <p className="text-center">{this.state.lang.projectsParagraph}</p>
+            <Link link='/projects'><FontAwesomeIcon icon={ faGamepad } /></Link>
           </section>
         </main>
       </div>

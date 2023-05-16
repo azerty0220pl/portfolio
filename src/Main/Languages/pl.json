@@ -5,6 +5,7 @@
     "aboutMe": "O mnie",
     "certifications": "Certyfikaty",
     "games": "Gry",
+    "projects": "Inne projekty",
     "lang": "Języki",
     "certParagraph": "Moje certyfikaty z freeCodeCamp i związane z nimi projekty (jeśli choć odrobinę ciekawe).",
     "gamesParagraph": "Moje gry mobilne, stworzone za pomocą Unity3D, c#, blender'a i inkscape'a. Wszystkie opublikowałem na Play Store.",
@@ -19,5 +20,6 @@
     "cubeClimb": "Cube Climb",
     "ccDes": "Avoid obstacles, choose your favourite skin and enjoy this endless runner. Get as high as you can, are you ready for the challenge?",
     "chatAppParagraph1": "Klient chatApp'a stworzyłem za pomocą react'a, redux'a i bootstrap'a. Jest on dostępny dzięki Github Pages. Link poniżej:",
-    "chatAppParagraph2": "API chatApp'a stworzyłem za pomocą node'a, express'a, passport'a i socket.io. Jest on dostępny dzięki darmowej usłudze rendera. Proszę mieć pod uwagą że serwer robi co może, co niestety nie zawsze wystarcza."
+    "chatAppParagraph2": "API chatApp'a stworzyłem za pomocą node'a, express'a, passport'a i socket.io. Jest on dostępny dzięki darmowej usłudze rendera. Proszę mieć pod uwagą że serwer robi co może, co niestety nie zawsze wystarcza.",
+    "projectsParagraph": "Inne projekty które można samemu wypróbwać."
 }

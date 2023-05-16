@@ -5,6 +5,7 @@
     "aboutMe": "Sobre mí",
     "certifications": "Certificados",
     "games": "Juegos",
+    "projects": "Otros proyectos",
     "lang": "Idiomas",
     "certParagraph": "Certificados de freeCodeCamp que he conseguido y los proyectos correspondientes (si es que son un poquito interesantes).",
     "gamesParagraph": "Juegos para móvil que he desarrollado con Unity3D, c#, blender e inkscape. Todos ellos publicados en Play Store.",
@@ -18,6 +19,5 @@
     "fcDes": "Try to get as high as you can without touching the black walls on both sides! Tap the screen and try to get to the end of the journey.",
     "cubeClimb": "Cube Climb",
     "ccDes": "Avoid obstacles, choose your favourite skin and enjoy this endless runner. Get as high as you can, are you ready for the challenge?",
-    "chatAppParagraph1": "He desarrollado el cliente de chatApp con react, redux y bootstrap. Está disponible en Github Pages. Enlace:",
-    "chatAppParagraph2": "He desarrollado el API de chatApp con node, express, passport y socket.io. Está disponible en render. Por favor, tenga en cuenta que el servidor hace lo que puede, lo que no siempre es suficiente."
+    "projectsParagraph": "Otros proyectos que he desarrollado y se pueden probar."
 }

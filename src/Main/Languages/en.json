@@ -5,6 +5,7 @@
     "aboutMe": "About me",
     "certifications": "Certifications",
     "games": "Games",
+    "projects": "Other projects",
     "lang": "Languages",
     "certParagraph": "freeCodeCamp certifications I earned with their respective projects (if somewhat interesting).",
     "gamesParagraph": "Mobile games I made with Unity3D, c#, blender and inkscape. All of them are published on Play Store.",
@@ -18,6 +19,5 @@
     "fcDes": "Try to get as high as you can without touching the black walls on both sides! Tap the screen and try to get to the end of the journey.",
     "cubeClimb": "Cube Climb",
     "ccDes": "Avoid obstacles, choose your favourite skin and enjoy this endless runner. Get as high as you can, are you ready for the challenge?",
-    "chatAppParagraph1": "I created chatApp's client using react, redux and bootstrap. It is held on github pages. Link below:",
-    "chatAppParagraph2": "I created chatApp's api using node, express, passport and socket.io. It is held on render. Please have in mind that the server is doing it best, which is not always enough."
+    "projectsParagraph": "Other projects I made, that you can test yourself if you wish."
 }
