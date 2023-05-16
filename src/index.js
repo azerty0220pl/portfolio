@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import Main from './Main/Main';
 import Secondary from './Secondary/Secondary';
 
+import "./index.css";
+
 import {
   createBrowserRouter,
   RouterProvider,
