@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './app.scss';
-
 import Link from './Components/Link.js'
 import GameDiv from './Components/GameDiv.js';
 import CertificationDiv from './Components/CertificationDiv.js';
