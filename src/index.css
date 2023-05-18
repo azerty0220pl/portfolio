@@ -18,6 +18,21 @@
     @apply hover:bg-emerald-900 h-12 text-white flex items-center justify-center p-4;
 }
 
-.lang {
-    @apply fixed flex flex-col bg-emerald-800 rounded text-white top-14 p-4;
+.langT {
+    @apply fixed flex flex-col bg-emerald-800 rounded text-white top-14 p-4 opacity-100 visible;
+    transition: all 0.1s;
+}
+
+.langF {
+    @apply fixed flex flex-col bg-emerald-800 rounded text-white top-14 p-4 opacity-0 invisible;
+    transition: all 0.1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

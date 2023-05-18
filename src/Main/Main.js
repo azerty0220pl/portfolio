@@ -67,15 +67,11 @@ class Main extends React.Component {
               <a className="menu-button" href="#projects">{this.state.lang.projects}</a>
               <button className="menu-button" onClick={this.langDropdown}>
                 {this.state.lang.lang}
-                {
-                  this.state.langDd ?
-                    (<div className="lang">
-                      <button className="menu-button" value="pl" onClick={this.changeLanguage}>Polski</button>
-                      <button className="menu-button" value="en" onClick={this.changeLanguage}>English</button>
-                      <button className="menu-button" value="es" onClick={this.changeLanguage}>Español</button>
-                    </div>) :
-                    <div />
-                }
+                <div className={this.state.langDd ? "langT" : "langF"}>
+                  <button className="menu-button" value="pl" onClick={this.changeLanguage}>Polski</button>
+                  <button className="menu-button" value="en" onClick={this.changeLanguage}>English</button>
+                  <button className="menu-button" value="es" onClick={this.changeLanguage}>Español</button>
+                </div>
               </button>
             </div>
           </nav>
