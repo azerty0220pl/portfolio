@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav {
+    @apply bg-emerald-800 fixed w-screen h-12 flex justify-between items-center px-8;
+}
+
+.logo {
+    @apply flex flex-row items-center text-white;
+}
+
+.menu {
+    @apply flex flex-row items-center space-x-2;
+}
+
+.menu-button {
+    @apply hover:bg-emerald-900 h-12 text-white flex items-center justify-center p-4;
+}
+
+.lang {
+    @apply fixed flex flex-col bg-emerald-800 rounded text-white top-14 p-4;
+}

@@ -23,13 +23,16 @@ class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      lang: en
+      lang: en,
+      langDd: false
     }
+
     this.changeLanguage = this.changeLanguage.bind(this);
+    this.langDropdown = this.langDropdown.bind(this);
   }
 
-  changeLanguage(event){
-    switch(event.target.value) {
+  changeLanguage(event) {
+    switch (event.target.value) {
       case 'en':
         this.setState({ lang: en });
         break;
@@ -44,35 +47,36 @@ class Main extends React.Component {
     }
   }
 
+  langDropdown() {
+    this.setState({ langDd: !this.state.langDd });
+  }
+
   render() {
     return (
-      <div className="fluid-container">
+      <div>
         <header>
-          <nav className="navbar navbar-expand-sm justify-content-between fixed-top" style={{"backgroundColor": "#20c997"}}>
-            <a href="#home" className="navbar-brand">
-              <img className="img-fluid mx-2" style={{ 'height': '2rem' }} src={logo} alt=""/>
-              {this.state.lang.name}
+          <nav className="nav">
+            <a href="#home" className="logo">
+              <img className="img-fluid mx-2" style={{ 'height': '2rem' }} src={logo} alt="" />
+              <p>{this.state.lang.name}</p>
             </a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse justify-content-end" id="collapse">
-              <ul className="navbar-nav mx-2">
-                <li className="nav-item"><a className="nav-link" href="#about">{this.state.lang.aboutMe}</a></li>
-                <li className="nav-item"><a className="nav-link" href="#certifications">{this.state.lang.certifications}</a></li>
-                <li className="nav-item"><a className="nav-link" href="#games">{this.state.lang.games}</a></li>
-                <li className="nav-item"><a className="nav-link" href="#projects">{this.state.lang.projects}</a></li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                    {this.state.lang.lang }
-                  </a>
-                  <ul className="dropdown-menu " style={{"backgroundColor": "#20c997"}} aria-labelledby="dropdownMenuLink">
-                    <li><button className="dropdown-item" value="pl" onClick={this.changeLanguage}>Polski</button></li>
-                    <li><button className="dropdown-item" value="en" onClick={this.changeLanguage}>English</button></li>
-                    <li><button className="dropdown-item" value="es" onClick={this.changeLanguage}>Español</button></li>
-                  </ul>
-                </li>
-              </ul>
+            <div className="menu relative inline-block text-left">
+              <a className="menu-button" href="#about">{this.state.lang.aboutMe}</a>
+              <a className="menu-button" href="#certifications">{this.state.lang.certifications}</a>
+              <a className="menu-button" href="#games">{this.state.lang.games}</a>
+              <a className="menu-button" href="#projects">{this.state.lang.projects}</a>
+              <button className="menu-button" onClick={this.langDropdown}>
+                {this.state.lang.lang}
+                {
+                  this.state.langDd ?
+                    (<div className="lang">
+                      <button className="menu-button" value="pl" onClick={this.changeLanguage}>Polski</button>
+                      <button className="menu-button" value="en" onClick={this.changeLanguage}>English</button>
+                      <button className="menu-button" value="es" onClick={this.changeLanguage}>Español</button>
+                    </div>) :
+                    <div />
+                }
+              </button>
             </div>
           </nav>
         </header>
@@ -82,10 +86,10 @@ class Main extends React.Component {
               <h1 className="text-center">{this.state.lang.name}</h1>
               <p className="text-center">{this.state.lang.shortDes}</p>
               <div className="d-flex justify-content-evenly">
-                <Link link="https://www.freecodecamp.org/SzymonKokot"><FontAwesomeIcon icon={ faFreeCodeCamp } /></Link>
-                <Link link="https://github.com/azerty0220pl"><FontAwesomeIcon icon={ faGithub } /></Link>
-                <Link link="https://www.linkedin.com/in/szymon-kokot-b3143b26a/"><FontAwesomeIcon icon={ faLinkedin } /></Link>
-                <Link link="https://play.google.com/store/apps/developer?id=Azerty0220pl"><FontAwesomeIcon icon={ faGooglePlay } /></Link>
+                <Link link="https://www.freecodecamp.org/SzymonKokot"><FontAwesomeIcon icon={faFreeCodeCamp} /></Link>
+                <Link link="https://github.com/azerty0220pl"><FontAwesomeIcon icon={faGithub} /></Link>
+                <Link link="https://www.linkedin.com/in/szymon-kokot-b3143b26a/"><FontAwesomeIcon icon={faLinkedin} /></Link>
+                <Link link="https://play.google.com/store/apps/developer?id=Azerty0220pl"><FontAwesomeIcon icon={faGooglePlay} /></Link>
               </div>
             </div>
           </section>
@@ -93,7 +97,7 @@ class Main extends React.Component {
             <h1 className="text-center m-3">{this.state.lang.aboutMe}</h1>
             <div className="d-flex justify-content-center">
               <p className="text-center m-3 w-75">
-              {this.state.lang.longDes}
+                {this.state.lang.longDes}
               </p>
             </div>
           </section>
@@ -176,7 +180,7 @@ class Main extends React.Component {
           <section id="projects" className='bg-secondary p-5'>
             <h1 className='text-center m-3'>{this.state.lang.projects}</h1>
             <p className="text-center">{this.state.lang.projectsParagraph}</p>
-            <Link link='/projects'><FontAwesomeIcon icon={ faGamepad } /></Link>
+            <Link link='/projects'><FontAwesomeIcon icon={faGamepad} /></Link>
           </section>
         </main>
       </div>
