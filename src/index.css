@@ -9,7 +9,7 @@
 }
 
 .nav {
-    @apply bg-emerald-800 fixed w-screen h-12 flex justify-between items-center px-8;
+    @apply bg-emerald-800 fixed w-screen h-12 flex justify-between items-center px-8 z-20;
 }
 
 .logo {
@@ -35,7 +35,7 @@
 }
 
 #home {
-    @apply h-screen pt-12 flex flex-col justify-center items-center text-center bg-emerald-500 space-y-4;
+    @apply h-screen flex flex-col justify-center items-center text-center bg-emerald-500 space-y-4;
 }
 
 .decoration {
@@ -60,4 +60,8 @@
 
 .text {
     @apply z-10;
+}
+
+section {
+    @apply pt-12;
 }
