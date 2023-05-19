@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 .nav {
     @apply bg-emerald-800 fixed w-screen h-12 flex justify-between items-center px-8;
 }
@@ -20,19 +26,38 @@
 
 .langT {
     @apply fixed flex flex-col bg-emerald-800 rounded text-white top-14 p-4 opacity-100 visible;
-    transition: all 0.1s;
+    transition: all 0.2s;
 }
 
 .langF {
     @apply fixed flex flex-col bg-emerald-800 rounded text-white top-14 p-4 opacity-0 invisible;
-    transition: all 0.1s;
+    transition: all 0.2s;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+#home {
+    @apply h-screen pt-12 flex flex-col justify-center items-center text-center bg-emerald-500 space-y-4;
+}
+
+.decoration {
+    @apply absolute z-0;
+    margin: 0 !important;
+    height: 25vw;
+    width: 99%;
+    top: calc(100% - 25vw);
+    right: 10%;
+    border-bottom: 25vw solid rgb(5 150 105);
+    border-right: 90vw solid rgb(16 185 129);
+    max-width: 100%;
+}
+
+.main-title {
+    @apply text-5xl underline underline-offset-1 z-10;
+}
+
+.links {
+    @apply flex justify-center space-x-8 z-10;
+}
+
+.text {
+    @apply z-10;
 }

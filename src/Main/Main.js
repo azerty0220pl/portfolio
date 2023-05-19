@@ -77,29 +77,28 @@ class Main extends React.Component {
           </nav>
         </header>
         <main>
-          <section id="home" className="vh-100 bg-light d-flex align-items-center justify-content-center">
-            <div>
-              <h1 className="text-center">{this.state.lang.name}</h1>
-              <p className="text-center">{this.state.lang.shortDes}</p>
-              <div className="d-flex justify-content-evenly">
-                <Link link="https://www.freecodecamp.org/SzymonKokot"><FontAwesomeIcon icon={faFreeCodeCamp} /></Link>
-                <Link link="https://github.com/azerty0220pl"><FontAwesomeIcon icon={faGithub} /></Link>
-                <Link link="https://www.linkedin.com/in/szymon-kokot-b3143b26a/"><FontAwesomeIcon icon={faLinkedin} /></Link>
-                <Link link="https://play.google.com/store/apps/developer?id=Azerty0220pl"><FontAwesomeIcon icon={faGooglePlay} /></Link>
-              </div>
+          <section id="home">
+            <h1 className="main-title">{this.state.lang.name}</h1>
+            <p className="text">{this.state.lang.shortDes}</p>
+            <div className="links">
+              <Link link="https://www.freecodecamp.org/SzymonKokot"><FontAwesomeIcon icon={faFreeCodeCamp} /></Link>
+              <Link link="https://github.com/azerty0220pl"><FontAwesomeIcon icon={faGithub} /></Link>
+              <Link link="https://www.linkedin.com/in/szymon-kokot-b3143b26a/"><FontAwesomeIcon icon={faLinkedin} /></Link>
+              <Link link="https://play.google.com/store/apps/developer?id=Azerty0220pl"><FontAwesomeIcon icon={faGooglePlay} /></Link>
             </div>
+            <div className="decoration" />
           </section>
-          <section id="about" className="bg-primary p-5">
-            <h1 className="text-center m-3">{this.state.lang.aboutMe}</h1>
-            <div className="d-flex justify-content-center">
-              <p className="text-center m-3 w-75">
+          <section id="about">
+            <h1>{this.state.lang.aboutMe}</h1>
+            <div>
+              <p>
                 {this.state.lang.longDes}
               </p>
             </div>
           </section>
-          <section id="certifications" className="bg-secondary p-5">
-            <h1 className='text-center m-3'>{this.state.lang.certifications}</h1>
-            <p className='text-center'>{this.state.lang.certParagraph}</p>
+          <section id="certifications">
+            <h1>{this.state.lang.certifications}</h1>
+            <p>{this.state.lang.certParagraph}</p>
             <CertificationDiv
               certificationLink="https://www.freecodecamp.org/certification/SzymonKokot/responsive-web-design"
               certificationTitle="Responsive Web Design Certification"
@@ -137,9 +136,9 @@ class Main extends React.Component {
               project5Title="File Metadata Microservice"
             />
           </section>
-          <section id="games" className='bg-primary p-5'>
-            <h1 className='text-center m-3'>{this.state.lang.games}</h1>
-            <p className="text-center">
+          <section id="games">
+            <h1>{this.state.lang.games}</h1>
+            <p>
               {this.state.lang.gamesParagraph}
             </p>
             <GameDiv
@@ -173,9 +172,9 @@ class Main extends React.Component {
               git="https://github.com/azerty0220pl/Cube-Run"
               play="https://play.google.com/store/apps/details?id=com.azerty0220pl.CubeRun" />
           </section>
-          <section id="projects" className='bg-secondary p-5'>
-            <h1 className='text-center m-3'>{this.state.lang.projects}</h1>
-            <p className="text-center">{this.state.lang.projectsParagraph}</p>
+          <section id="projects">
+            <h1>{this.state.lang.projects}</h1>
+            <p>{this.state.lang.projectsParagraph}</p>
             <Link link='/projects'><FontAwesomeIcon icon={faGamepad} /></Link>
           </section>
         </main>
