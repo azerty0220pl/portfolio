@@ -89,12 +89,10 @@ class Main extends React.Component {
             <div className="decoration" />
           </section>
           <section id="about">
-            <h1>{this.state.lang.aboutMe}</h1>
-            <div>
-              <p>
-                {this.state.lang.longDes}
-              </p>
-            </div>
+            <h1 className="sec-title">{this.state.lang.aboutMe}</h1>
+            <p className="sec-paragraph">
+              {this.state.lang.longDes}
+            </p>
           </section>
           <section id="certifications">
             <h1>{this.state.lang.certifications}</h1>

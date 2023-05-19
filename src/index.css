@@ -51,7 +51,7 @@
 }
 
 .main-title {
-    @apply text-5xl underline underline-offset-1 z-10;
+    @apply text-5xl z-10 font-semibold;
 }
 
 .links {
@@ -63,5 +63,13 @@
 }
 
 section {
-    @apply pt-12;
+    @apply pt-12 flex flex-col justify-center items-center text-center space-y-4;
+}
+
+.sec-title {
+    @apply text-center text-3xl font-semibold;
+}
+
+.sec-paragraph {
+    @apply text-center w-1/2;
 }
