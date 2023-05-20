@@ -101,9 +101,17 @@ section:nth-child(even) {
 }
 
 .game:nth-child(even) {
-    @apply flex-row;
+    @apply flex-row-reverse;
 }
 
 .game-icon {
     @apply rounded-full shadow-2xl bg-white;
+}
+
+.game-title {
+    @apply text-center text-xl font-semibold;
+}
+
+.game-info {
+    @apply flex flex-col items-center justify-center space-y-3;
 }
