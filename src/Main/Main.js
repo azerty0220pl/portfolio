@@ -164,9 +164,6 @@ class Main extends React.Component {
             <h1 className="sec-title">{this.state.lang.projects}</h1>
             <p>{this.state.lang.projectsParagraph}</p>
             <Link link='/projects'><FontAwesomeIcon icon={faGamepad} /></Link>
-            <svg className="even-decoration" height="4rem" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-              <polygon points="0,0 100,100 0,100" />
-            </svg>
           </section>
         </main>
       </div>

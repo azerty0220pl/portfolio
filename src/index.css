@@ -87,3 +87,7 @@ section {
 .cert-link {
     @apply underline text-xl font-semibold m-8 z-10 rounded shadow-xl border rounded border-emerald-100 p-2;
 }
+
+#projects {
+    padding-bottom: 4rem;
+}
