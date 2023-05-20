@@ -103,19 +103,19 @@ section:nth-child(even) {
 }
 
 .game {
-    @apply m-8 flex w-2/3 rounded-lg border border-emerald-200 shadow-xl p-4 justify-between !important;
+    @apply m-8 flex w-2/3 rounded-lg border border-emerald-200 shadow-xl p-4 lg:justify-between justify-center items-center !important;
 }
 
 .game:nth-child(odd) {
-    @apply  flex-row;
+    @apply  lg:flex-row flex-col;
 }
 
 .game:nth-child(even) {
-    @apply flex-row-reverse;
+    @apply lg:flex-row-reverse flex-col;
 }
 
 .game-icon {
-    @apply rounded-full shadow-2xl bg-white;
+    @apply rounded-full shadow-2xl bg-white m-4;
 }
 
 .game-title {
