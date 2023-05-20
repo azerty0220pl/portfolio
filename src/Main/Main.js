@@ -86,18 +86,21 @@ class Main extends React.Component {
               <Link link="https://www.linkedin.com/in/szymon-kokot-b3143b26a/"><FontAwesomeIcon icon={faLinkedin} /></Link>
               <Link link="https://play.google.com/store/apps/developer?id=Azerty0220pl"><FontAwesomeIcon icon={faGooglePlay} /></Link>
             </div>
-            <svg  className="decoration" height="25vh" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <svg className="decoration" height="25vh" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
               <polygon points="0,0 100,100 0,100" />
             </svg>
           </section>
-          <section id="about">
+          <section id="about" className="odd">
             <h1 className="sec-title">{this.state.lang.aboutMe}</h1>
             <p className="sec-paragraph">
               {this.state.lang.longDes}
             </p>
+            <svg className="odd-decoration" height="4rem" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon points="100,0 100,100 0,100" />
+            </svg>
           </section>
-          <section id="certifications">
-            <h1>{this.state.lang.certifications}</h1>
+          <section id="certifications" className="even">
+            <h1 className="sec-title">{this.state.lang.certifications}</h1>
             <p>{this.state.lang.certParagraph}</p>
             <CertificationDiv
               certificationLink="https://www.freecodecamp.org/certification/SzymonKokot/responsive-web-design"
@@ -135,9 +138,12 @@ class Main extends React.Component {
               project5Link="https://file-metadata-microservice-szymonkokot.onrender.com/"
               project5Title="File Metadata Microservice"
             />
+            <svg className="even-decoration" height="4rem" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon points="0,0 100,100 0,100" />
+            </svg>
           </section>
-          <section id="games">
-            <h1>{this.state.lang.games}</h1>
+          <section id="games" className="odd">
+            <h1 className="sec-title">{this.state.lang.games}</h1>
             <p>
               {this.state.lang.gamesParagraph}
             </p>
@@ -171,11 +177,17 @@ class Main extends React.Component {
               des='Avoid obstacles, choose your favourite skin and enjoy this endless runner. Get as high as you can, are you ready for the challenge?'
               git="https://github.com/azerty0220pl/Cube-Run"
               play="https://play.google.com/store/apps/details?id=com.azerty0220pl.CubeRun" />
+            <svg className="odd-decoration" height="4rem" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon points="100,0 100,100 0,100" />
+            </svg>
           </section>
-          <section id="projects">
-            <h1>{this.state.lang.projects}</h1>
+          <section id="projects" className="even">
+            <h1 className="sec-title">{this.state.lang.projects}</h1>
             <p>{this.state.lang.projectsParagraph}</p>
             <Link link='/projects'><FontAwesomeIcon icon={faGamepad} /></Link>
+            <svg className="even-decoration" height="4rem" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon points="0,0 100,100 0,100" />
+            </svg>
           </section>
         </main>
       </div>

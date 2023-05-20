@@ -57,7 +57,7 @@
 }
 
 section {
-    @apply pt-12 flex flex-col justify-center items-center text-center space-y-4;
+    @apply pt-16 flex flex-col justify-center items-center text-center space-y-4;
 }
 
 .sec-title {
@@ -66,4 +66,20 @@ section {
 
 .sec-paragraph {
     @apply text-center w-1/2;
+}
+
+.odd {
+    @apply bg-emerald-100;
+}
+
+.odd-decoration {
+    @apply z-0 fill-emerald-200;
+}
+
+.even {
+    @apply bg-emerald-200;
+}
+
+.even-decoration {
+    @apply z-0 fill-emerald-100;
 }
