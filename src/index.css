@@ -34,6 +34,16 @@
     transition: all 0.2s;
 }
 
+.menuT {
+    @apply fixed flex flex-col bg-emerald-800 rounded text-white top-14 right-2 p-4 opacity-100 visible;
+    transition: all 0.2s;
+}
+
+.menuF {
+    @apply fixed flex flex-col bg-emerald-800 rounded text-white top-14 right-2 p-4 opacity-0 invisible;
+    transition: all 0.2s;
+}
+
 #home {
     @apply h-screen flex flex-col justify-center items-center text-center bg-emerald-500 space-y-4;
 }

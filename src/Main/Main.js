@@ -17,18 +17,22 @@ import ccIcon from './Icons/cubeClimb.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faFreeCodeCamp, faLinkedin, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
-import { faGamepad } from '@fortawesome/free-solid-svg-icons';
+import { faGamepad, faBars } from '@fortawesome/free-solid-svg-icons';
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       lang: en,
-      langDd: false
+      langDd: false,
+      menuDd: false,
+      width: 0
     }
 
     this.changeLanguage = this.changeLanguage.bind(this);
     this.langDropdown = this.langDropdown.bind(this);
+    this.menuDropdown = this.menuDropdown.bind(this);
+    this.windowResized = this.windowResized.bind(this)
   }
 
   changeLanguage(event) {
@@ -51,6 +55,24 @@ class Main extends React.Component {
     this.setState({ langDd: !this.state.langDd });
   }
 
+  menuDropdown() {
+    this.setState({ menuDd: !this.state.menuDd });
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.windowResized);
+    this.windowResized();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.windowResized);
+  }
+
+  windowResized() {
+    this.setState({width: window.innerWidth});
+  }
+
+
   render() {
     return (
       <div>
@@ -60,20 +82,33 @@ class Main extends React.Component {
               <img className="img-fluid mx-2" style={{ 'height': '2rem' }} src={logo} alt="" />
               <p>{this.state.lang.name}</p>
             </a>
-            <div className="menu relative inline-block text-left">
-              <a className="menu-button" href="#about">{this.state.lang.aboutMe}</a>
-              <a className="menu-button" href="#certifications">{this.state.lang.certifications}</a>
-              <a className="menu-button" href="#games">{this.state.lang.games}</a>
-              <a className="menu-button" href="#projects">{this.state.lang.projects}</a>
-              <button className="menu-button" onClick={this.langDropdown}>
-                {this.state.lang.lang}
-                <div className={this.state.langDd ? "langT" : "langF"}>
-                  <button className="menu-button" value="pl" onClick={this.changeLanguage}>Polski</button>
-                  <button className="menu-button" value="en" onClick={this.changeLanguage}>English</button>
-                  <button className="menu-button" value="es" onClick={this.changeLanguage}>Español</button>
+            {
+              this.state.width >= 1024 ?
+                <div className="menu">
+                  <a className="menu-button" href="#about">{this.state.lang.aboutMe}</a>
+                  <a className="menu-button" href="#certifications">{this.state.lang.certifications}</a>
+                  <a className="menu-button" href="#games">{this.state.lang.games}</a>
+                  <a className="menu-button" href="#projects">{this.state.lang.projects}</a>
+                  <button className="menu-button" onClick={this.langDropdown}>
+                    {this.state.lang.lang}
+                    <div className={this.state.langDd ? "langT" : "langF"}>
+                      <button className="menu-button" value="pl" onClick={this.changeLanguage}>Polski</button>
+                      <button className="menu-button" value="en" onClick={this.changeLanguage}>English</button>
+                      <button className="menu-button" value="es" onClick={this.changeLanguage}>Español</button>
+                    </div>
+                  </button>
                 </div>
-              </button>
-            </div>
+                :
+                <button className="menu" onClick={this.menuDropdown}>
+                  <FontAwesomeIcon icon={faBars} style={{color: "white"}} />
+                  <div className={this.state.menuDd ? "menuT" : "menuF"}>
+                    <a className="menu-button" href="#about">{this.state.lang.aboutMe}</a>
+                    <a className="menu-button" href="#certifications">{this.state.lang.certifications}</a>
+                    <a className="menu-button" href="#games">{this.state.lang.games}</a>
+                    <a className="menu-button" href="#projects">{this.state.lang.projects}</a>
+                  </div>
+                </button>
+            }
           </nav>
         </header>
         <main>
