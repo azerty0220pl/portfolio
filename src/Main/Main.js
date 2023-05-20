@@ -198,7 +198,7 @@ class Main extends React.Component {
           <section id="projects">
             <h1 className="sec-title">{this.state.lang.projects}</h1>
             <p>{this.state.lang.projectsParagraph}</p>
-            <Link link='/projects'><FontAwesomeIcon icon={faGamepad} /></Link>
+            <a href='/projects'><FontAwesomeIcon icon={faGamepad} /></a>
           </section>
         </main>
       </div>
