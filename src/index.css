@@ -61,11 +61,11 @@ section {
 }
 
 .sec-title {
-    @apply text-center text-3xl font-semibold;
+    @apply text-center text-3xl font-semibold shadow-lg;
 }
 
 .sec-paragraph {
-    @apply text-center w-1/2;
+    @apply text-center w-1/2 z-10;
 }
 
 .odd {
@@ -82,4 +82,8 @@ section {
 
 .even-decoration {
     @apply z-0 fill-emerald-100;
+}
+
+.cert-link {
+    @apply underline text-xl font-semibold m-8 z-10 rounded shadow-xl border rounded border-emerald-100 p-2;
 }
