@@ -86,7 +86,9 @@ class Main extends React.Component {
               <Link link="https://www.linkedin.com/in/szymon-kokot-b3143b26a/"><FontAwesomeIcon icon={faLinkedin} /></Link>
               <Link link="https://play.google.com/store/apps/developer?id=Azerty0220pl"><FontAwesomeIcon icon={faGooglePlay} /></Link>
             </div>
-            <div className="decoration" />
+            <svg  className="decoration" height="25vh" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon points="0,0 100,100 0,100" />
+            </svg>
           </section>
           <section id="about">
             <h1 className="sec-title">{this.state.lang.aboutMe}</h1>

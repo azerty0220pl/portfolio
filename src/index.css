@@ -39,15 +39,9 @@
 }
 
 .decoration {
-    @apply absolute z-0;
+    @apply absolute z-0 fill-emerald-100;
     margin: 0 !important;
-    height: 25vw;
-    width: 99%;
-    top: calc(100% - 25vw);
-    right: 10%;
-    border-bottom: 25vw solid rgb(5 150 105);
-    border-right: 90vw solid rgb(16 185 129);
-    max-width: 100%;
+    top: 75vh;
 }
 
 .main-title {
