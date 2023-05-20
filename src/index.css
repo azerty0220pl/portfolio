@@ -60,6 +60,14 @@ section {
     @apply pt-16 flex flex-col justify-center items-center text-center space-y-4;
 }
 
+section:nth-child(odd) {
+    @apply bg-emerald-200;
+}
+
+section:nth-child(even) {
+    @apply bg-emerald-100;
+}
+
 .sec-title {
     @apply text-center text-3xl font-semibold shadow-lg;
 }
@@ -68,16 +76,8 @@ section {
     @apply text-center w-1/2 z-10;
 }
 
-.odd {
-    @apply bg-emerald-100;
-}
-
 .odd-decoration {
     @apply z-0 fill-emerald-200;
-}
-
-.even {
-    @apply bg-emerald-200;
 }
 
 .even-decoration {
@@ -90,4 +90,20 @@ section {
 
 #projects {
     padding-bottom: 4rem;
+}
+
+.game {
+    @apply m-8 flex w-2/3 rounded-lg border border-emerald-200 shadow-xl p-4 justify-between !important;
+}
+
+.game:nth-child(odd) {
+    @apply  flex-row;
+}
+
+.game:nth-child(even) {
+    @apply flex-row;
+}
+
+.game-icon {
+    @apply rounded-full shadow-2xl bg-white;
 }

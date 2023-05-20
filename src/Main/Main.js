@@ -90,7 +90,7 @@ class Main extends React.Component {
               <polygon points="0,0 100,100 0,100" />
             </svg>
           </section>
-          <section id="about" className="odd">
+          <section id="about">
             <h1 className="sec-title">{this.state.lang.aboutMe}</h1>
             <p className="sec-paragraph">
               {this.state.lang.longDes}
@@ -99,7 +99,7 @@ class Main extends React.Component {
               <polygon points="100,0 100,100 0,100" />
             </svg>
           </section>
-          <section id="certifications" className="even">
+          <section id="certifications">
             <h1 className="sec-title">{this.state.lang.certifications}</h1>
             <p className="sec-paragraph">{this.state.lang.certParagraph}</p>
             <CertificationDiv
@@ -121,7 +121,7 @@ class Main extends React.Component {
               <polygon points="0,0 100,100 0,100" />
             </svg>
           </section>
-          <section id="games" className="odd">
+          <section id="games">
             <h1 className="sec-title">{this.state.lang.games}</h1>
             <p>
               {this.state.lang.gamesParagraph}
@@ -160,7 +160,7 @@ class Main extends React.Component {
               <polygon points="100,0 100,100 0,100" />
             </svg>
           </section>
-          <section id="projects" className="even">
+          <section id="projects">
             <h1 className="sec-title">{this.state.lang.projects}</h1>
             <p>{this.state.lang.projectsParagraph}</p>
             <Link link='/projects'><FontAwesomeIcon icon={faGamepad} /></Link>
