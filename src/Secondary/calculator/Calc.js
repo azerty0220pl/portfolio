@@ -56,33 +56,33 @@ const reducer = (state = DEFAULT, action) => {
         case NUMBER:
             if (newState.equals) newState = { ...DEFAULT };
 
-            if (action.number == "." && newState.decimal) return newState;
-            if (newState.input == "0" && action.number != ".") {
+            if (action.number === "." && newState.decimal) return newState;
+            if (newState.input === "0" && action.number !== ".") {
                 newState.input = action.number;
                 return newState;
             }
-            if (action.number == ".") {
+            if (action.number === ".") {
                 newState.decimal = true;
             }
             newState.input += action.number;
             return newState;
         case OPERATOR:
             newState.equals = false;
-            if (newState.input != "0") {
+            if (newState.input !== "0") {
                 newState.memory += newState.operator + newState.input;
                 newState.operator = action.operator;
                 newState.input = "0";
                 newState.decimal = false;
                 return newState;
             }
-            if (newState.memory != "" && newState.input == "0") {
+            if (newState.memory !== "" && newState.input === "0") {
                 newState.operator = action.operator;
                 return newState;
             }
             return newState;
         case SUBSTRACT:
             newState.equals = false;
-            if (newState.input != "0") {
+            if (newState.input !== "0") {
                 newState.memory += newState.operator + newState.input;
                 newState.operator = "-";
                 newState.input = "0";
@@ -90,8 +90,8 @@ const reducer = (state = DEFAULT, action) => {
                 return newState;
             }
             if (
-                newState.memory != "" &&
-                newState.input == "0" &&
+                newState.memory !== "" &&
+                newState.input === "0" &&
                 newState.operator.length < 2
             ) {
                 newState.operator += "-";
@@ -144,10 +144,6 @@ class CalcKey extends React.Component {
 }
 
 class CalcDisplay extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div id="display" className="rounded bg-light">
@@ -162,10 +158,6 @@ class CalcDisplay extends React.Component {
 }
 
 class Calculator extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className="card w-50 border-light">

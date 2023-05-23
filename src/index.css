@@ -8,6 +8,16 @@
     margin: 0;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
 .nav {
     @apply bg-emerald-800 fixed w-screen h-12 flex justify-between items-center px-8 z-20;
 }
@@ -21,7 +31,7 @@
 }
 
 .menu-button {
-    @apply hover:bg-emerald-900 h-12 text-white flex items-center justify-center p-4;
+    @apply hover:bg-emerald-900 hover:text-white h-12 text-white flex items-center justify-center p-4;
 }
 
 .langT {
@@ -107,7 +117,7 @@ section:nth-child(even) {
 }
 
 .game:nth-child(odd) {
-    @apply  lg:flex-row flex-col;
+    @apply lg:flex-row flex-col;
 }
 
 .game:nth-child(even) {
@@ -124,4 +134,24 @@ section:nth-child(even) {
 
 .game-info {
     @apply flex flex-col items-center justify-center space-y-3;
+}
+
+a {
+    @apply hover:text-black;
+}
+
+.secondary {
+    @apply flex flex-row bg-emerald-50 h-full w-full;
+}
+
+.secondary-1 {
+    @apply flex flex-col justify-around w-1/6 border-r-2 border-r-emerald-100;
+}
+
+.secondary-2 {
+    @apply flex w-5/6 h-full items-center justify-center;
+}
+
+.sec-button {
+    @apply text-center hover:bg-emerald-100 py-3;
 }

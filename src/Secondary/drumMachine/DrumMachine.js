@@ -78,34 +78,35 @@ class DrumMachine extends React.Component {
 
     playSound2(event) {
         let x = -1;
-        console.log(event.key)
         switch (event.key) {
-            case 'Q':
+            case 'q':
                 x = 0;
                 break;
-            case 'W':
+            case 'w':
                 x = 1;
                 break;
-            case 'E':
+            case 'e':
                 x = 2;
                 break;
-            case 'A':
+            case 'a':
                 x = 3;
                 break;
-            case 'S':
+            case 's':
                 x = 4;
                 break;
-            case 'D':
+            case 'd':
                 x = 5;
                 break;
-            case 'Z':
+            case 'z':
                 x = 6;
                 break;
-            case 'X':
+            case 'x':
                 x = 7;
                 break;
-            case 'C':
+            case 'c':
                 x = 8;
+                break;
+            default:
                 break;
         }
         if (x >= 0) {
@@ -123,7 +124,7 @@ class DrumMachine extends React.Component {
 
     render() {
         return (
-            <div className="card" id='drum-machine'>
+            <div className="card w-50" id='drum-machine'>
                 <div className="card-header">
                     <h2 className="text-center">Drum Machine</h2>
                 </div>

@@ -77,7 +77,7 @@ const reducer = (state = DEFAULT, action) => {
         case RESET:
             return DEFAULT;
         case CHANGE:
-            newState.current = newState.current == 0 ? 1 : 0;
+            newState.current = newState.current === 0 ? 1 : 0;
             newState.time = -1;
             return newState;
         default:
@@ -131,7 +131,7 @@ class Timer extends React.Component {
     }
 
     curTime() {
-        if (this.state.time == "00:00") {
+        if (this.state.time === "00:00") {
             playSound('beep');
             this.props.change();
         }
@@ -140,7 +140,7 @@ class Timer extends React.Component {
         let result = ":";
 
         let x = 0;
-        if (this.props.current == 0)
+        if (this.props.current === 0)
             x = this.props.sessionTime - this.props.time;
         else
             x = this.props.breakTime - this.props.time;
@@ -149,7 +149,7 @@ class Timer extends React.Component {
         result += x % 60 >= 10 ? x % 60 : '0' + x % 60;
 
         this.setState({ time: result });
-        if (this.state.time == "00:00") {
+        if (this.state.time === "00:00") {
             playSound('beep');
         }
     }
@@ -178,10 +178,10 @@ class Timer extends React.Component {
                 <div className="card-body">
                     <div>
                         <h2 className="text-center">25 + 5 Clock</h2>
-                        <h3 className="text-center">{this.props.current == 0 ? 'Session' : 'Break'}</h3>
+                        <h3 className="text-center">{this.props.current === 0 ? 'Session' : 'Break'}</h3>
                     </div>
                     <div>
-                        <h1 className="text-center" id='time-left'>{this.props.running || this.props.time != 0 ? this.state.time : (this.props.sessionTime >= 600 ? this.props.sessionTime / 60 : '0' + this.props.sessionTime / 60) + ':00'}</h1>
+                        <h1 className="text-center" id='time-left'>{this.props.running || this.props.time !== 0 ? this.state.time : (this.props.sessionTime >= 600 ? this.props.sessionTime / 60 : '0' + this.props.sessionTime / 60) + ':00'}</h1>
                     </div>
                 </div>
                 <div className="card-footer">
@@ -196,13 +196,9 @@ class Timer extends React.Component {
 }
 
 class App extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
-            <div className="card">
+            <div className="card w-50">
                 <div className="card-header">
                     <div className="row justify-content-evenly">
                         <TimeSetter
