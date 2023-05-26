@@ -6,17 +6,17 @@ import Secondary from './Secondary/Secondary';
 import "./index.css";
 
 import {
-  createBrowserRouter,
-  RouterProvider,
+  createHashRouter,
+  RouterProvider
 } from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Main />
   },
   {
-    path: "/projects",
+    path: "/projects/",
     element: <Secondary />
   }
 ]);

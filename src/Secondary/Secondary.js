@@ -6,6 +6,7 @@ import DrumMachine from "./drumMachine/DrumMachine";
 
 const APPS = [<QuoteBox />, <Clock />, <Calc />, <DrumMachine />]
 
+
 class Secondary extends React.Component {
     constructor(props) {
         super(props);
@@ -19,7 +20,7 @@ class Secondary extends React.Component {
         return (
             <div className="secondary">
                 <div className="secondary-1">
-                    <a className="sec-button" href="/">Back</a>
+                    <a className="sec-button" href="/portfolio">Back</a>
                     <button className="sec-button" onClick={() => { this.setState({ cur: 0 }) }}>Quote Box</button>
                     <button className="sec-button" onClick={() => { this.setState({ cur: 1 }) }}>25+5 Clock</button>
                     <button className="sec-button" onClick={() => { this.setState({ cur: 2 }) }}>Calculator</button>

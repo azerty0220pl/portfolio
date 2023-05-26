@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import Link from './Components/Link.js'
 import GameDiv from './Components/GameDiv.js';
@@ -69,7 +71,7 @@ class Main extends React.Component {
   }
 
   windowResized() {
-    this.setState({width: window.innerWidth});
+    this.setState({ width: window.innerWidth });
   }
 
 
@@ -78,17 +80,17 @@ class Main extends React.Component {
       <div>
         <header>
           <nav className="nav">
-            <a href="#home" className="logo">
+            <HashLink to="#home" className="logo">
               <img className="img-fluid mx-2" style={{ 'height': '2rem' }} src={logo} alt="" />
               <p>{this.state.lang.name}</p>
-            </a>
+            </HashLink>
             {
               this.state.width >= 1024 ?
                 <div className="menu">
-                  <a className="menu-button" href="#about">{this.state.lang.aboutMe}</a>
-                  <a className="menu-button" href="#certifications">{this.state.lang.certifications}</a>
-                  <a className="menu-button" href="#games">{this.state.lang.games}</a>
-                  <a className="menu-button" href="#projects">{this.state.lang.projects}</a>
+                  <HashLink className="menu-button" to="#about">{this.state.lang.aboutMe}</HashLink>
+                  <HashLink className="menu-button" to="#certifications">{this.state.lang.certifications}</HashLink>
+                  <HashLink className="menu-button" to="#games">{this.state.lang.games}</HashLink>
+                  <HashLink className="menu-button" to="#projects">{this.state.lang.projects}</HashLink>
                   <button className="menu-button" onClick={this.langDropdown}>
                     {this.state.lang.lang}
                     <div className={this.state.langDd ? "langT" : "langF"}>
@@ -100,12 +102,12 @@ class Main extends React.Component {
                 </div>
                 :
                 <button className="menu" onClick={this.menuDropdown}>
-                  <FontAwesomeIcon icon={faBars} style={{color: "white"}} />
+                  <FontAwesomeIcon icon={faBars} style={{ color: "white" }} />
                   <div className={this.state.menuDd ? "menuT" : "menuF"}>
-                    <a className="menu-button" href="#about">{this.state.lang.aboutMe}</a>
-                    <a className="menu-button" href="#certifications">{this.state.lang.certifications}</a>
-                    <a className="menu-button" href="#games">{this.state.lang.games}</a>
-                    <a className="menu-button" href="#projects">{this.state.lang.projects}</a>
+                    <HashLink className="menu-button" to="#about">{this.state.lang.aboutMe}</HashLink>
+                    <HashLink className="menu-button" to="#certifications">{this.state.lang.certifications}</HashLink>
+                    <HashLink className="menu-button" to="#games">{this.state.lang.games}</HashLink>
+                    <HashLink className="menu-button" to="#projects">{this.state.lang.projects}</HashLink>
                   </div>
                 </button>
             }
@@ -198,7 +200,7 @@ class Main extends React.Component {
           <section id="projects">
             <h1 className="sec-title">{this.state.lang.projects}</h1>
             <p>{this.state.lang.projectsParagraph}</p>
-            <a href='/projects'><FontAwesomeIcon icon={faGamepad} /></a>
+            <NavLink to='projects'><FontAwesomeIcon icon={faGamepad} /></NavLink>
           </section>
         </main>
       </div>
