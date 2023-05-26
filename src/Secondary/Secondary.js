@@ -3,8 +3,9 @@ import QuoteBox from "./quote/QuoteBox";
 import Clock from "./clock/Clock";
 import Calc from "./calculator/Calc";
 import DrumMachine from "./drumMachine/DrumMachine";
+import GameObject from "./GameObject";
 
-const APPS = [<QuoteBox />, <Clock />, <Calc />, <DrumMachine />]
+const APPS = [<QuoteBox />, <Clock />, <Calc />, <DrumMachine />, <GameObject />]
 
 
 class Secondary extends React.Component {
@@ -25,6 +26,7 @@ class Secondary extends React.Component {
                     <button className="sec-button" onClick={() => { this.setState({ cur: 1 }) }}>25+5 Clock</button>
                     <button className="sec-button" onClick={() => { this.setState({ cur: 2 }) }}>Calculator</button>
                     <button className="sec-button" onClick={() => { this.setState({ cur: 3 }) }}>Drum Machine</button>
+                    <button className="sec-button" onClick={() => { this.setState({ cur: 4 }) }}>Flappy Cube 2D</button>
                 </div>
                 <div className="secondary-2">
                     {
