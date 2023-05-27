@@ -105,14 +105,14 @@ class TimeSetter extends React.Component {
 
     render() {
         return (
-            <div className="col-5" id={this.props.ids + '-label'}>
+            <div className="col" id={this.props.ids + '-label'}>
                 <div>
                     <h4 className="text-center">{this.props.title}</h4>
                 </div>
                 <div className="row justify-content-evenly">
-                    <button className="col-2 btn btn-secondary" id={this.props.ids + '-decrement'} onClick={this.subtract}>-</button>
+                    <button className="col-2 btn btn-secondary flex justify-content-center" id={this.props.ids + '-decrement'} onClick={this.subtract}>-</button>
                     <h3 className="text-center col-6" id={this.props.ids + '-length'}>{this.props.time / 60}</h3>
-                    <button className="col-2 btn btn-secondary" id={this.props.ids + '-increment'} onClick={this.add}>+</button>
+                    <button className="col-2 btn btn-secondary flex justify-content-center" id={this.props.ids + '-increment'} onClick={this.add}>+</button>
                 </div>
             </div>
         );
@@ -185,9 +185,9 @@ class Timer extends React.Component {
                     </div>
                 </div>
                 <div className="card-footer">
-                    <div className="row justify-content-evenly">
-                        <button className="col-5 btn btn-primary" id='start_stop' onClick={this.handlePlay}>Start/Pause</button>
-                        <button className="col-5 btn btn-danger" id='reset' onClick={this.handleReset}>Reset</button>
+                    <div className="row row-cols-1 row-cols-sm-3 gap-1 justify-content-evenly">
+                        <button className="col btn btn-primary" id='start_stop' onClick={this.handlePlay}>Start/Pause</button>
+                        <button className="col btn btn-danger" id='reset' onClick={this.handleReset}>Reset</button>
                     </div>
                 </div>
             </div>
@@ -200,7 +200,7 @@ class App extends React.Component {
         return (
             <div className="card w-50">
                 <div className="card-header">
-                    <div className="row justify-content-evenly">
+                    <div className="row row-cols-1 row-cols-sm-2 justify-content-evenly">
                         <TimeSetter
                             ids="session"
                             title="Session Time"

@@ -131,39 +131,39 @@ class DrumMachine extends React.Component {
                 <div className="card-body align-items-center row-cols-3 gap-5" id="keys">
                     <button className="drum-pad col btn btn-light" id="heather1" value="0" onClick={this.playSound1}>
                         Q
-                        <audio src={SOUNDS[0].url} class="clip" id="Q" />
+                        <audio src={SOUNDS[0].url} className="clip" id="Q" />
                     </button>
                     <button className="drum-pad col btn btn-light" id="heather2" value="1" onClick={this.playSound1}>
                         W
-                        <audio src={SOUNDS[1].url} class="clip" id="W" />
+                        <audio src={SOUNDS[1].url} className="clip" id="W" />
                     </button>
                     <button className="drum-pad col btn btn-light" id="heather3" value="2" onClick={this.playSound1}>
                         E
-                        <audio src={SOUNDS[2].url} class="clip" id="E" />
+                        <audio src={SOUNDS[2].url} className="clip" id="E" />
                     </button>
                     <button className="drum-pad col btn btn-light" id="heather4" value="3" onClick={this.playSound1}>
                         A
-                        <audio src={SOUNDS[3].url} class="clip" id="A" />
+                        <audio src={SOUNDS[3].url} className="clip" id="A" />
                     </button>
                     <button className="drum-pad col btn btn-light" id="clap" value="4" onClick={this.playSound1}>
                         S
-                        <audio src={SOUNDS[4].url} class="clip" id="S" />
+                        <audio src={SOUNDS[4].url} className="clip" id="S" />
                     </button>
                     <button className="drum-pad col btn btn-light" id="open" value="5" onClick={this.playSound1}>
                         D
-                        <audio src={SOUNDS[5].url} class="clip" id="D" />
+                        <audio src={SOUNDS[5].url} className="clip" id="D" />
                     </button>
                     <button className="drum-pad col btn btn-light" id="kick-hat" value="6" onClick={this.playSound1}>
                         Z
-                        <audio src={SOUNDS[6].url} class="clip" id="Z" />
+                        <audio src={SOUNDS[6].url} className="clip" id="Z" />
                     </button>
                     <button className="drum-pad col btn btn-light" id="kick" value="7" onClick={this.playSound1}>
                         X
-                        <audio src={SOUNDS[7].url} class="clip" id="X" />
+                        <audio src={SOUNDS[7].url} className="clip" id="X" />
                     </button>
                     <button className="drum-pad col btn btn-light" id="closed" value="8" onClick={this.playSound1}>
                         C
-                        <audio src={SOUNDS[8].url} class="clip" id="C" url />
+                        <audio src={SOUNDS[8].url} className="clip" id="C" url />
                     </button>
                 </div>
                 <div className="card-footer align-items-center" id="display">
