@@ -1,18 +1,9 @@
-import { Unity, useUnityContext } from "react-unity-webgl";
-
-function FlappyCube() {
-    const { unityProvider } = useUnityContext({
-        loaderUrl: "https://cdn.jsdelivr.net/gh/azerty0220pl/portfolio/public/webgl/FlappyCube2D/Build/FlappyCube2D.loader.js",
-        dataUrl: "https://cdn.jsdelivr.net/gh/azerty0220pl/portfolio/public/webgl/FlappyCube2D/Build/FlappyCube2D.data",
-        frameworkUrl: "https://cdn.jsdelivr.net/gh/azerty0220pl/portfolio/public/webgl/FlappyCube2D/Build/FlappyCube2D.framework.js",
-        codeUrl: "https://cdn.jsdelivr.net/gh/azerty0220pl/portfolio/public/webgl/FlappyCube2D/Build/FlappyCube2D.wasm"
-    });
-
+function NeonRideII() {
     return (
         <div className="game-wrap">
-            <Unity unityProvider={unityProvider} />
+            <iframe src="https://itch.io/embed-upload/7995083?color=333333" width="480" height="980"><a href="https://azerty0220pl.itch.io/neon-ride-ii">Play Neon Ride II on itch.io</a></iframe>
         </div>
     );
 }
 
-export default FlappyCube;
+export default NeonRideII;

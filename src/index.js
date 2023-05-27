@@ -24,7 +24,7 @@ const router = createHashRouter([
     path: "/projects/",
     element: <Secondary />
   },
-  {
+  /*{
     path: "cubeclimb",
     element: <CubeClimb />
   },
@@ -43,7 +43,7 @@ const router = createHashRouter([
   {
     path: "squarerun",
     element: <SquareRun />
-  }
+  }*/
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
