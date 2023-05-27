@@ -155,3 +155,11 @@ a {
 .sec-button {
     @apply text-center hover:bg-emerald-100 py-3;
 }
+
+canvas {
+    @apply aspect-[9/16] lg:h-2/3 max-lg:w-2/3;
+}
+
+.game-wrap {
+    @apply w-full h-full flex justify-center items-center bg-emerald-100;
+}

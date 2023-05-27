@@ -3,7 +3,7 @@
   "description": "A fullstack web developer and game developer portfolio.",
   "author": "Szymon Kokot",
   "version": "0.1.1",
-  "homepage": "https://azerty0220pl.github.io/portfolio",
+  "homepage": "https://azerty0220pl.github.io/portfolio/",
   "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
