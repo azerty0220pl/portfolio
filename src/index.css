@@ -22,7 +22,7 @@ body {
 }
 
 .logo {
-    @apply flex flex-row items-center text-white;
+    @apply flex flex-row items-center text-white hover:bg-emerald-900 hover:text-white;
 }
 
 .menu {
