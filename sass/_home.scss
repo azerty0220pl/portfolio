@@ -1,0 +1,24 @@
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .links {
+        display: flex;
+        width: 50%;
+        max-width: 20rem;
+        justify-content: space-around;
+
+        i {
+            color: #000;
+        }
+    }
+}
