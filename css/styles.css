@@ -93,7 +93,7 @@ section .margin-bottom {
   position: sticky;
   top: 0;
   width: 100%;
-  height: calc(100vh + 10rem);
+  height: calc(100vh + 25rem);
 }
 .background-1 {
   z-index: 0;
