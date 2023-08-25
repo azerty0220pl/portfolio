@@ -93,7 +93,7 @@ section .margin-bottom {
   position: sticky;
   top: 0;
   width: 100%;
-  height: calc(100vh + 25rem);
+  height: 100vh;
 }
 .background-1 {
   z-index: 0;
@@ -121,6 +121,13 @@ section .margin-bottom {
 }
 .background:last-child {
   height: 100vh;
+}
+
+.error-margin {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  background-color: transparent;
 }
 
 .separation {
