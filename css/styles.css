@@ -142,6 +142,10 @@ section .margin-bottom {
   margin: 2rem;
 }
 
+.list * {
+  display: block;
+}
+
 .home {
   gap: 2rem;
 }
